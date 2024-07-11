@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 250px;
+            right: 38%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 30px;
+        }
+
+        .para {
+            position: absolute;
+            top: 400px;
+            right: 32.5%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 17px;
+        }
+
+        .navbar-custom {
+            background-color: whitesmoke;
+            height: 80px;
+        }
+    </style>
+    <script>
+        function sendToPage() {
+            var input = document.getElementById("search").value;
+            //alert(input);
+            if (input == "animal" || "animals") {
+                location.href = "animal.html";
+                return false;
+            }
+            else if (input == "bird" || "birds") {
+                location.href = "birds.html";
+                return false;
+            }
+            else if (input == "flower" || "flowers") {
+                location.href = "flower.html";
+                return false;
+            }
+            else if (input == "mountain" || "mountains") {
+                location.href = "mountain.html";
+                return false;
+            }
+            else if (input == "nature" | "nature images") {
+                location.href = "nature.html";
+                return false;
+            }
+            else if (input == "sea" || "sea image") {
+                location.href = "sea.html";
+                return false;
+            }
+            else if (input == "sky" || "sky images") {
+                location.href = "sky.html";
+                return false;
+            }
+            else if (input == "sunset" | "sunset images") {
+                location.href = "sunset.html";
+                return false;
+            }
+            else if (input == "temple" || "temple images") {
+                location.href = "temple.html";
+                return false;
+            }
+            else if (input == "wallpaper" || "wallpaper") {
+                location.href = "wallpaper.html";
+                return false;
+            }
+            else if (input == "waterfall" || "waterfalls") {
+                location.href = "waterfall.html";
+                return false;
+            }
+            else {
+                alert('Invalid Input.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="./web.html"><img
+                        src="./Media/New folder/4f6d15238582459e91c9f40f94a89bd7 (2)-fotor-bg-remover-20230725175639.png"
+                        height="70px" width="70px" alt=""></a>
+            </div>
+            <div class="navbar-form navbar-left" style="margin-top: 27px;">
+                <input type="text" method="put" id="search" placeholder="Search" value="">
+                <button type="submit" onclick="sendToPage()"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li style="padding-left: 100px; margin-top: 16px;font-size: 17px;"><a
+                            href="./Explore.html">Explore</a></li>
+                    <li style="padding-left: 100px;margin-top: 16px;font-size: 17px;"><a href="./about us.html">About Us
+                        </a></li>
+                    <li style="padding-left: 100px;margin-top: 16px;font-size: 17px;"><a href="./topics.html">Topics</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-top: 16px;font-size: 17px;"><a href="./log in.html"><span
+                                class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav><br>
+    <br>
+    <br>
+    <br>
+    <h3 style="margin-left: 40px;">About Us</h3>
+    <hr width="55px" style="border-top: 2px solid black; margin-left: 60px;"><br>
+    <br>
+    <br>
+    <div class="col-lg-8">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="margin-left: 38px; font-size: 45px;color: black;"><b>Photos for everyone</b></h1><br>
+        <p style="margin-left: 38px; font-size: 19px; ">Over 3 million free high-resolution images brought
+            to you by the <br>world’s most generous community of
+            photographers.
+        </p><br>
+        <a href="./web.html" class="btn btn-info" role="button"
+            style="background-color: black; border-color: black; margin-left: 40px; height: 44px; width: 130px; padding-top: 10px;">Start
+            browsing</a>
+    </div>
+    <div class="col-lg-2"><br>
+        <img src="./Media/Flower/tomoko-uji-Oq6Mdb4o6vA-unsplash.jpg" class="img-rounded"
+            style="height: 260px; width: 100%;" alt=""> <br>
+        <br>
+        <img src="./Media/New folder/henrik-l-BzigA9JyAPA-unsplash.jpg" class="img-rounded"
+            style="height: 260px; width: 100%;" alt="">
+    </div>
+    <div class="col-lg-2">
+        <img src="./Media/New folder/risto-kokkonen-l0JG9eMy3zc-unsplash.jpg" class="img-rounded"
+            style="height: 260px; width: 100%;" alt=""><br>
+        <br>
+        <img src="./Media/Wallpaper/pawel-czerwinski-OG44d93iNJk-unsplash.jpg" class="img-rounded"
+            style="height: 260px; width: 100%;" alt="">
+    </div>
+    <br>
+    <div class="col-lg-12">
+        <br>
+        <br>
+        <br><br>
+        <center>
+            <h2 style="color: black; font-size: 28px;"><b>Portrait View is internet's source of freely <br> usable
+                    images.</b></h2>
+        </center>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="col-lg-4">
+        <img src="./Media/New folder/manja-vitolic-7tOV35hnkao-unsplash.jpg" height="100%" width="100%" alt=""><br>
+        <br>
+        <h4 style="color: black;"><b>Over three million curated photos</b></h4>
+        <p>We hand-select every photo and accept only the best, so that no matter what you need—you’ll find exactly what
+            you’re
+            looking for <br> on Portrait View.</p>
+    </div>
+    <div class="col-lg-4">
+        <img src="./Media/New folder/chang-duong-Sj0iMtq_Z4w-unsplash.jpg" height="100%" width="100%" alt=""><br>
+        <br>
+        <h4 style="color: black;"><b>A community of 293,995 photographers</b></h4>
+        <p>Portrait View is home to a growing community of photographers—from hobbyists, professionals, emerging brands
+            and everyone in
+            between.</p>
+    </div>
+    <div class="col-lg-4">
+        <img src="./Media/New folder/content-pixie-wnaNPxM6bn8-unsplash.jpg" height="100%" width="100%" alt=""><br>
+        <br>
+        <h4 style="color: black;"><b>Fuelling your favourite platforms</b></h4>
+        <p>With partners like BuzzFeed, Squarespace and Trello being powered by our API, the Portrait View library is
+            more widely
+            accessible than ever.</p>
+    </div><br>
+    <br>
+    <div class="col-lg-7">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="margin-left: 38px; font-size: 30px;color: black;"><b>Make something awesome</b></h1><br>
+        <p style="margin-left: 38px; font-size: 19px; ">Portrait View was born from the pain we had in finding great,
+            usable
+            imagery. And <br> we weren’t alone. Which is why,today—millions of creators from around the <br> world have
+            downloaded over 4 billion Portrait View images to create <br> presentations, artwork, mockups, and more.</p>
+        <br>
+        <a href="./Explore.html" class="btn btn-info" role="button"
+            style="background-color: black; border-color: black; margin-left: 40px; height: 44px; width: 170px; padding-top: 10px;">Find
+            the perfect image</a>
+    </div><br>
+    <div class="col-lg-2"><br>
+        <br>
+        <br>
+        <br><img src="./Media/New folder/mohammad-metri-_q2ZPGtUo4E-unsplash.jpg" height="100%" width="100%" alt="">
+        <br>
+        <br>
+        <img src="./Media/New folder/sam-moghadam-khamseh-yxZSAjyToP4-unsplash.jpg" height="100%" width="100%" alt="">
+    </div>
+    <div class="col-lg-3">
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="./Media/New folder/lluvia-morales-nSEF54mlkm8-unsplash.jpg" height="100%" width="100%" alt=""><br>
+        <br>
+        <img src="./Media/New folder/joanna-kosinska-B6yDtYs2IgY-unsplash.jpg" height="100%" width="100%" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="col-lg-12">
+        <div class="image">
+            <br>
+            <br>
+            <br>
+            <br>
+            <center><img src="./Media/New folder/pic.jpg" alt="" height="600px" width="1250px"></center>
+            <div class="centered"><b>Powering the internet’s visuals</b></div>
+            <div class="para">
+                <p>How we started? The concept was simple. Portrait view was born <br>from the pain we had in finding
+                    great, usable imagery. Today, <br>
+                    Portrait View is a platform fuelled by a community who give <br> their work for free in support of
+                    the creatives everywhere. <br>
+                    Without them, none of this would be possible.</p>
+                <br><a href="./sign in.html" class="btn btn-info" role="button"
+                    style="background-color: white; border-color: white;  height: 44px; width: 150px; padding-top: 10px; color: black;">Sign
+                    up for free</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="background-color: whitesmoke;">
+            <hr>
+            <br>
+            <br>
+            <center><img
+                    src="./Media/New folder/4f6d15238582459e91c9f40f94a89bd7 (2)-fotor-bg-remover-20230725175639.png"
+                    height="100px" width="100px" alt=""></center>
+            <br>
+            <br>
+            <center><a href="http://instagram.com/portrait__view?igshid=MzRIODBiNWFIZA=="><i class="fa fa-instagram"
+                        style="font-size: 27px; color: black;padding: 10px;"></i></a>
+                <a href=""><i class="fa fa-twitter" style="font-size: 27px; color: black;padding: 10px;"></i></a>
+                <a href=""><i class="fa fa-facebook" style="font-size: 27px;color: black;padding: 10px;"></i></a>
+            </center><br>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

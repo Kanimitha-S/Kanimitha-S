@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .navbar-custom {
+            background-color: whitesmoke;
+            height: 80px;
+        }
+    </style>
+    <script>
+        function sendToPage() {
+            var input = document.getElementById("search").value;
+            //alert(input);
+            if (input == "animal" || "animals") {
+                location.href = "animal.html";
+                return false;
+            }
+            else if (input == "bird" || "birds") {
+                location.href = "birds.html";
+                return false;
+            }
+            else if (input == "flower" || "flowers") {
+                location.href = "flower.html";
+                return false;
+            }
+            else if (input == "mountain" || "mountains") {
+                location.href = "mountain.html";
+                return false;
+            }
+            else if (input == "nature" | "nature images") {
+                location.href = "nature.html";
+                return false;
+            }
+            else if (input == "sea" || "sea image") {
+                location.href = "sea.html";
+                return false;
+            }
+            else if (input == "sky" || "sky images") {
+                location.href = "sky.html";
+                return false;
+            }
+            else if (input == "sunset" | "sunset images") {
+                location.href = "sunset.html";
+                return false;
+            }
+            else if (input == "temple" || "temple images") {
+                location.href = "temple.html";
+                return false;
+            }
+            else if (input == "wallpaper" || "wallpaper") {
+                location.href = "wallpaper.html";
+                return false;
+            }
+            else if (input == "waterfall" || "waterfalls") {
+                location.href = "waterfall.html";
+                return false;
+            }
+            else {
+                alert('Invalid Input.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="./web.html"><img
+                        src="./Media/New folder/4f6d15238582459e91c9f40f94a89bd7 (2)-fotor-bg-remover-20230725175639.png"
+                        height="70px" width="70px" alt=""></a>
+            </div>
+            <div class="navbar-form navbar-left" style="margin-top: 27px;">
+                <input type="text" method="put" id="search" placeholder="Search" value="">
+                <button type="submit" onclick="sendToPage()"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li style="padding-left: 100px;margin-top: 16px;font-size: 17px;"><a
+                            href="./Explore.html">Explore</a></li>
+                    <li style="padding-left: 100px;margin-top: 16px;font-size: 17px;"><a href="./about us.html">About Us
+                        </a></li>
+                    <li style="padding-left: 100px;margin-top: 16px;font-size: 17px;"><a href="./topics.html">Topics</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-top: 16px;font-size: 17px;"><a href="./log in.html"><span
+                                class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="font-size: 48px; padding-left: 25px;"><b>Topics</b></h1><br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="col-lg-4">
+            <div class="thumbnail">
+                <a href="./animal.html">
+                    <img src="./Media/Animals/picture 6.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Animals</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>Exotic wildlife, pet kittens — and
+                            everything in between. Uncover the beauty of the animal..</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./flower.html">
+                    <img src="./Media/Flower/daiga-ellaby-YnNczu62rdk-unsplash.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Flowers</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>Flowers bring a sense of happiness and
+                            positivity into the atmosphere. Flowers..</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./mountain.html">
+                    <img src="./Media/mountain/benjamin-voros-phIFdC6lA4E-unsplash.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Mountain</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>Mountains make better human beings out of
+                            us: fitter, calmer, happier..</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./temple.html">
+                    <img src="./Media/temple/istockphoto-1197155454-612x612.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Temple</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>The temple is a sanctuary for the soul.The
+                            temple is a place of peace..</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="thumbnail">
+                <a href="./background.html">
+                    <img src="./Media/background/picture 7.jpg" alt="">
+                    <div class="caption">
+                        <h2>Background</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>Background often refers to the
+                            circumstances or events that precede..</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./nature.html">
+                    <img src="./Media/Nature/picture 4.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Nature</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>Through photography, the beauty of Mother
+                            Nature can be frozen in..</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./sea.html">
+                    <img src="./Media/sea/fuu-j-1GcWQAm9a2I-unsplash.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Sea</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>The voice of the sea speaks to the soul.
+                            The touch of the sea..</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./wallpaper.html">
+                    <img src="./Media/Wallpaper/jeremy-thomas-O6N9RV2rzX8-unsplash.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Wallpaper</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>From epic drone shots to inspiring moments
+                            in nature—submit your best..</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="thumbnail">
+                <a href="./birds.html">
+                    <img src="./Media/birds/picture 4.jpg" alt="">
+                    <div class="caption">
+                        <h2>Birds</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>Birds are flying, warm blooded vertebrates
+                            that have more than 10,400 species..</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./sky.html">
+                    <img src="./Media/sky/billy-huynh-v9bnfMCyKbg-unsplash.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Sky</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>Gazing at the skies makes one really feel
+                            that there are no boundaries.. </p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./sunset.html">
+                    <img src="./Media/sunset/jason-blackeye-GPPAjJicemU-unsplash.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Sunset</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>Sunsets remind us that no matter how good
+                            or bad the day was, it always..</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="thumbnail">
+                <a href="./waterfall.html">
+                    <img src="./Media/waterfall/istockphoto-1212873894-612x612.jpg" alt="">
+                    <div class="caption">
+                        <h2 style="text-decoration: none;">Waterfall</h2>
+                        <p style="color: grey;">by Portrait view</p>
+                        <br>
+                        <p>being near waterfalls can indeed have a
+                            calming effecton the mind..</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div style="background-color: whitesmoke;">
+            <hr>
+            <br>
+            <br>
+            <center><img
+                    src="./Media/New folder/4f6d15238582459e91c9f40f94a89bd7 (2)-fotor-bg-remover-20230725175639.png"
+                    height="100px" width="100px" alt=""></center>
+            <br>
+            <br>
+            <center><a href="http://instagram.com/portrait__view?igshid=MzRIODBiNWFIZA=="><i class="fa fa-instagram"
+                        style="font-size: 27px; color: black;padding: 10px;"></i></a>
+                <a href=""><i class="fa fa-twitter" style="font-size: 27px; color: black;padding: 10px;"></i></a>
+                <a href=""><i class="fa fa-facebook" style="font-size: 27px;color: black;padding: 10px;"></i></a>
+            </center><br>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .hover-img {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover-img:hover .edit {
+            display: block;
+        }
+
+        .edit {
+            padding-top: 7px;
+            padding-right: 7px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: none;
+        }
+
+        .edit a {
+            color: #000;
+        }
+
+        .hover-img {
+            background-color: #0f0e0e;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            text-align: right;
+
+        }
+
+        .hover-img * {
+            box-sizing: border-box;
+            transition: all 0.45s ease;
+        }
+
+        .hover-img::before,
+        .hover-img::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: '';
+            transition: all 0.3s ease;
+            z-index: 1;
+            opacity: 0;
+            transform: scaleY(2);
+        }
+
+
+
+        .hover-img div {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1em;
+            opacity: 0;
+            z-index: 2;
+            transition-delay: 0.1s;
+        }
+
+        .hover-img:hover::before,
+        .hover-img:hover::after {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .hover-img:hover>img {
+            opacity: 0.7;
+        }
+
+        .hover-img:hover div {
+            opacity: 1;
+        }
+
+        .navbar-custom {
+            background-color: whitesmoke;
+            height: 80px;
+        }
+    </style>
+    <script>
+        function sendToPage() {
+            var input = document.getElementById("search").value;
+            //alert(input);
+            if (input = "animal") {
+                location.href = "animal.html";
+                return false;
+            }
+            else if (input == "bird") {
+                location.href = "birds.html";
+                return false;
+            }
+            else if (input == "flower") {
+                location.href = "flower.html";
+                return false;
+            }
+            else if (input == "mountain") {
+                location.href = "mountain.html";
+                return false;
+            }
+            else if (input == "nature") {
+                location.href = "nature.html";
+                return false;
+            }
+            else if (input == "sea") {
+                location.href = "sea.html";
+                return false;
+            }
+            else if (input == "sky") {
+                location.href = "sky.html";
+                return false;
+            }
+            else if (input == "sunset") {
+                location.href = "sunset.html";
+                return false;
+            }
+            else if (input == "temple") {
+                location.href = "temple.html";
+                return false;
+            }
+            else if (input == "wallpaper") {
+                location.href = "wallpaper.html";
+                return false;
+            }
+            else if (input == "waterfall") {
+                location.href = "waterfall.html";
+                return false;
+            }
+            else {
+                alert('Invalid Input.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="./web.html"><img
+                        src="./Media/New folder/4f6d15238582459e91c9f40f94a89bd7 (2)-fotor-bg-remover-20230725175639.png"
+                        height="70px" width="70px" alt=""></a>
+            </div>
+            <div class="navbar-form navbar-left" style="margin-top: 27px;">
+                <input type="text" method="put" id="search" placeholder="Search" value="">
+                <button type="submit" onclick="sendToPage()"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li style="padding-left: 100px;margin-top: 16px;font-size: 17px;"><a
+                            href="./Explore.html">Explore</a></li>
+                    <li style="padding-left: 100px;margin-top: 16px;font-size: 17px;"><a href="./about us.html">About Us
+                        </a></li>
+                    <li style="padding-left: 100px;margin-top: 16px;font-size: 17px;"><a href="./topics.html">Topics</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-top: 16px;font-size: 17px;"><a href="./log in.html"><span
+                                class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="./Explore.html" style="text-decoration: none;color: black; margin-left: 40px;font-size: 15px;">Explore</a>
+    <br>
+    <h1 style="margin-left: 40px; font-size: 45px;color: black;"><b>Explore Portrait View photos</b></h1>
+    <br>
+    <div class="col-lg-6">
+        <p style="font-size: 19px;margin-left: 35px;">Portrait view has more than thousand free high-resolution photos.
+            Explore these
+            popular photo
+            categories on Portrait view. All
+            photos
+            here are free to download.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left: 40px; font-size: 30px;color: black;"><b>Browse thousands of free images on Portrait
+            View</b></h2>
+    <br>
+    <br>
+    <div class="col-lg-4">
+        <div class="hover-img">
+            <img src="./Media/New folder/waranont-joe-T7qyLNPwgKA-unsplash.jpg" class=""
+                style="height: 280px;width: 100%;">
+            <div class="edit"><a href="./background.html"
+                    style="text-decoration: none; color: white;position: absolute;top: 50%;left: 50%; transform: translate(-50%, -50%);font-size: 20px;">Backgrounds</a>
+            </div>
+        </div><br>
+        <br>
+        Download free desktop and mobile backgrounds. <br>
+        <br>
+        <button><a href="./background.html" style="color: grey;text-decoration: none;">Background images</a></button>
+    </div>
+    <div class="col-lg-4">
+        <div class="hover-img">
+            <img src="./Media/New folder/jess-aston-DvopK4gNs8A-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./nature.html"
+                    style="text-decoration: none; color: white;position: absolute;top: 50%;left: 50%; transform: translate(-50%, -50%);font-size: 20px;">Nature</a>
+            </div>
+        </div><br>
+        <br>
+        Download amazing photos and pictures for free. <br>
+        <br>
+        <button><a href="./nature.html" style="color: grey;text-decoration: none;">Nature images</a></button>
+    </div>
+    <div class="col-lg-4">
+        <div class="hover-img">
+            <img src="./Media/New folder/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg"
+                style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./wallpaper.html"
+                    style="text-decoration: none; color: white;position: absolute;top: 50%;left: 50%; transform: translate(-50%, -50%);font-size: 20px;">Wallpaper</a>
+            </div>
+        </div><br>
+        <br>
+        Discover your next desktop or mobile wallpaper.<br>
+        <br>
+        <button><a href="./wallpaper.html" style="color: grey;text-decoration: none;">Cool wallpapers</a></button>
+    </div><br>
+    <div class="col-lg-12">
+        <br>
+        <br>
+        <br>
+        <h2><b>Free high-resolution Portrait View photos</b></h2><br>
+        <br>
+    </div>
+    <div class="col-lg-4">
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/benjamin-voros-phIFdC6lA4E-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/benjamin-voros-phIFdC6lA4E-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/clem-onojeghuo-zlABb6Gke24-unsplash.jpg" style="height:100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/clem-onojeghuo-zlABb6Gke24-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/daniel-leone-v7daTKlZzaw-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/daniel-leone-v7daTKlZzaw-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/greg-rakozy-oMpAz-DN-9I-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/greg-rakozy-oMpAz-DN-9I-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/jeremy-thomas-O6N9RV2rzX8-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/jeremy-thomas-O6N9RV2rzX8-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/john-fowler-RsRTIofe0HE-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/john-fowler-RsRTIofe0HE-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/john-towner-JgOeRuGD_Y4-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/john-towner-JgOeRuGD_Y4-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/jonatan-pie-3l3RwQdHRHg-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/jonatan-pie-3l3RwQdHRHg-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/Wallpaper/neom-gVDUuJaG_wM-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/Wallpaper/neom-gVDUuJaG_wM-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/mountain/alessio-soggetti-zxcBR3zNc7I-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/alessio-soggetti-zxcBR3zNc7I-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/mountain/benjamin-voros-phIFdC6lA4E-unsplash.jpg" style="height:100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/benjamin-voros-phIFdC6lA4E-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+
+        <div class="hover-img">
+            <img src="./Media/mountain/boris-baldinger-eUFfY6cwjSU-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/boris-baldinger-eUFfY6cwjSU-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/mountain/daniel-leone-g30P1zcOzXo-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/daniel-leone-g30P1zcOzXo-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/mountain/daniela-izotenko-hOhlYhAiizc-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/daniela-izotenko-hOhlYhAiizc-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/mountain/david-marcu-78A265wPiO4-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/david-marcu-78A265wPiO4-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/mountain/denys-nevozhai-cPV4Eqs895w-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/denys-nevozhai-cPV4Eqs895w-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/mountain/eberhard-grossgasteiger-8H-ViMB-aLw-unsplash.jpg"
+                style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/eberhard-grossgasteiger-8H-ViMB-aLw-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/mountain/eberhard-grossgasteiger-YV_gbygzlWk-unsplash.jpg"
+                style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/eberhard-grossgasteiger-YV_gbygzlWk-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/mountain/garrett-parker-DlkF4-dbCOU-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/garrett-parker-DlkF4-dbCOU-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/mountain/guillaume-briard-lSXpV8bDeMA-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/mountain/guillaume-briard-lSXpV8bDeMA-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="hover-img">
+            <img src="./Media/waterfall/ben-guerin-NWrye3NRrKw-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/ben-guerin-NWrye3NRrKw-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/robert-lukeman-zNN6ubHmruI-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/robert-lukeman-zNN6ubHmruI-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/collins-lesulie-Q7QM2WSOTs4-unsplash.jpg" style="height:100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/collins-lesulie-Q7QM2WSOTs4-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+
+        <div class="hover-img">
+            <img src="./Media/waterfall/dave-DBGb9u1Yf6Q-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/dave-DBGb9u1Yf6Q-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/istockphoto-1212873894-612x612.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/istockphoto-1212873894-612x612.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/sunset/ann-savchenko-H0h_89iFsWs-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sunset/ann-savchenko-H0h_89iFsWs-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/sunset/byron-johnson-ec2SZSGPwJA-unsplash.jpg" style="height:100%;width: 100%;">
+            <div class="edit"><a href="./Media/sunset/byron-johnson-ec2SZSGPwJA-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+
+        <div class="hover-img">
+            <img src="./Media/sunset/dave-lsoogGC_5dg-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sunset/dave-lsoogGC_5dg-unsplash.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/sunset/david-mullins-3Jnws1iRSwk-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sunset/david-mullins-3Jnws1iRSwk-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/sunset/de-jesus-benitez-kEgJVDkQkbU-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sunset/de-jesus-benitez-kEgJVDkQkbU-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/jonatan-pie-VlH2eHyE_50-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/jonatan-pie-VlH2eHyE_50-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/joshua-sortino-IlvY3z4KVCI-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/joshua-sortino-IlvY3z4KVCI-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/mike-lewis-headsmart-media-waAAaeC9hns-unsplash.jpg"
+                style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/mike-lewis-headsmart-media-waAAaeC9hns-unsplash.jpg"
+                    download><i class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/mj-tangonan-OE6qLhRHhhs-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/mj-tangonan-OE6qLhRHhhs-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/nathan-anderson-ZjOQmOOWmGs-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/nathan-anderson-ZjOQmOOWmGs-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/waterfall/istockphoto-843075338-612x612.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/waterfall/istockphoto-843075338-612x612.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 28.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 28.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/temple/istockphoto-1141747975-612x612.jpg" style="height:100%;width: 100%;">
+            <div class="edit"><a href="./Media/temple/istockphoto-1141747975-612x612.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="hover-img">
+            <img src="./Media/sky/alan-jones-OQsxdghBKrU-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/alan-jones-OQsxdghBKrU-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/sky/altinay-dinc-LluELtL5mK4-unsplash.jpg" style="height:100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/altinay-dinc-LluELtL5mK4-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+
+        <div class="hover-img">
+            <img src="./Media/sky/anthony-cantin-ig-lw0Dtz34-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/anthony-cantin-ig-lw0Dtz34-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/sky/billy-huynh-v9bnfMCyKbg-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/billy-huynh-v9bnfMCyKbg-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/sky/chris-nguyen-lbmrrNgq2lo-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/chris-nguyen-lbmrrNgq2lo-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+
+        <div class="hover-img">
+            <img src="./Media/sky/clyde-rs-4XbZCfU2Uoo-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/clyde-rs-4XbZCfU2Uoo-unsplash.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/sky/dewang-gupta-ESEnXckWlLY-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/dewang-gupta-ESEnXckWlLY-unsplash.jpg" download><i
+                        class="material-icons" style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/sky/diego-ph-BCuxVP5WEsU-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/diego-ph-BCuxVP5WEsU-unsplash.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/sky/diego-ph-xW42e724p00-unsplash.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/sky/diego-ph-xW42e724p00-unsplash.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 24.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 24.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 25.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 25.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 26.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 26.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 3.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 3.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 4.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 4.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 5.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 5.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 6.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 6.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 7.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 7.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div><br>
+        <br>
+        <div class="hover-img">
+            <img src="./Media/background/picture 23.jpg" style="height: 100%;width: 100%;">
+            <div class="edit"><a href="./Media/background/picture 23.jpg" download><i class="material-icons"
+                        style="font-size: 40px;">download</i></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-12">
+        <div style="background-color: whitesmoke;">
+            <hr>
+            <br>
+            <br>
+            <center><img
+                    src="./Media/New folder/4f6d15238582459e91c9f40f94a89bd7 (2)-fotor-bg-remover-20230725175639.png"
+                    height="100px" width="100px" alt=""></center>
+            <br>
+            <br>
+            <center><a href="http://instagram.com/portrait__view?igshid=MzRIODBiNWFIZA=="><i class="fa fa-instagram"
+                        style="font-size: 27px; color: black;padding: 10px;"></i></a>
+                <a href=""><i class="fa fa-twitter" style="font-size: 27px; color: black;padding: 10px;"></i></a>
+                <a href=""><i class="fa fa-facebook" style="font-size: 27px;color: black;padding: 10px;"></i></a>
+            </center><br>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+</html>
