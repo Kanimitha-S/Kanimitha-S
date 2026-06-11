@@ -54,7 +54,7 @@ const kanimitha = {
       <h3>🛒 Shopwave — E-Commerce Platform</h3>
       <p>A fully responsive e-commerce web app with product listing, cart, and clean UI built with HTML/CSS/JS.</p>
       <p><code>HTML</code> &nbsp; <code>CSS</code> &nbsp; <code>JavaScript</code></p>
-      <a href="https://github.com/Kanimitha-S/Shopwave">🔗 View Repo</a>
+      <a href="https://shopwave-2wet.onrender.com/">🔗 View Repo</a>
     </td>
     <td width="50%">
       <h3>🚚 Logistics Serviceability Engine</h3>
