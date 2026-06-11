@@ -19,7 +19,7 @@
 
 ```javascript
 const kanimitha = {
-  role:       "Full Stack Developer & QA Tester",
+  role:       "Full Stack Developer & Manual Tester",
   location:   "Coimbatore, India 🇮🇳",
   focus:      ["Web Development", "Manual Testing", "UI/UX Design", "Logistics Tech"],
   currentlyLearning: ["React", "UI/UX Design", "CI/CD Pipelines"],
@@ -50,7 +50,7 @@ const kanimitha = {
 
 **Testing**
 
-![QA Testing](https://img.shields.io/badge/QA_Testing-FF6B6B?style=flat-square&logo=testinglibrary&logoColor=white)
+![QA Testing](https://img.shields.io/badge/QA_Testing-FF6B6B?style=flat-square)
 ![Manual Testing](https://img.shields.io/badge/Manual_Testing-FF9800?style=flat-square)
 
 ---
