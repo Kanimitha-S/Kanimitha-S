@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF&height=200&section=header&text=Kanimitha%20S&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20QA%20Engineer%20%7C%20UI%2FUX%20Designer&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF&height=200&section=header&text=Kanimitha%20S&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Manual%20Tester%20%7C%20UI%2FUX%20Designer&descAlignY=58&descSize=18" width="100%"/>
 
 </div>
 
@@ -34,24 +34,24 @@ const kanimitha = {
 
 **Languages & Frameworks**
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
 
 **Tools & Platforms**
 
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
 
 **Testing**
 
-![QA Testing](https://img.shields.io/badge/QA_Testing-FF6B6B?style=flat-square)
-![Manual Testing](https://img.shields.io/badge/Manual_Testing-FF9800?style=flat-square)
+<img src="https://img.shields.io/badge/QA_Testing-FF6B6B?style=flat-square" alt="QA Testing"/>
+<img src="https://img.shields.io/badge/Manual_Testing-FF9800?style=flat-square" alt="Manual Testing"/>
 
 ---
 
@@ -80,13 +80,14 @@ const kanimitha = {
   </tr>
   <tr>
     <td width="50%">
-      <h3>🎨 UI/UX Design Work</h3>
-      <p>Designing clean, user-centered interfaces with a focus on usability, visual hierarchy, and responsive layouts.</p>
+      <h3>🌐 My Portfolio</h3>
+      <p>Personal portfolio website showcasing my projects, skills, and experience — built with a clean, responsive design.</p>
       <p>
-        <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
+        <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white"/>
         <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
       </p>
-      <a href="https://kanimitha-portfolio.vercel.app/">🔗 View Portfolio</a>
+      <a href="https://kanimitha-portfolio.vercel.app/">🔗 View Live</a>
     </td>
     <td width="50%">
       <h3>🧪 QA Testing Suite</h3>
@@ -125,7 +126,7 @@ const kanimitha = {
 |---|---|
 | **Frontend Dev** | Built responsive web apps (Shopwave, my-portfolio) with modern UI/UX |
 | **UI/UX Design** | Crafted user-centered designs with clean visual hierarchy and responsive layouts |
-| **QA Testering** | Designed and executed structured test cases for web applications |
+| **Manual Testing** | Designed and executed structured test cases for web applications |
 | **Logistics Tech** | Built a serviceability engine for real-world delivery use cases |
 | **Problem Solving** | Multiple projects shipped from idea → deployment on Vercel |
 
@@ -135,7 +136,7 @@ const kanimitha = {
 
 <div align="center">
 
-I'm actively looking for **full-time roles** in Frontend Development, Full-Stack Engineering, or QA. If you like what you see — let's talk!
+I'm actively looking for **full-time roles** in Frontend Development, Full-Stack Engineering, or Manual Testing. If you like what you see — let's talk!
 
 [![Portfolio](https://img.shields.io/badge/Visit_My_Portfolio-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://kanimitha-portfolio.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kanimitha-s-63081224b/)
