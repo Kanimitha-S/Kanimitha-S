@@ -19,7 +19,7 @@
 
 ```javascript
 const kanimitha = {
-  role:       "Full Stack Developer & QA Engineer",
+  role:       "Full Stack Developer & QA Tester",
   location:   "Coimbatore, India 🇮🇳",
   focus:      ["Web Development", "Manual Testing", "UI/UX Design", "Logistics Tech"],
   currentlyLearning: ["React", "UI/UX Design", "CI/CD Pipelines"],
@@ -125,7 +125,7 @@ const kanimitha = {
 |---|---|
 | **Frontend Dev** | Built responsive web apps (Shopwave, my-portfolio) with modern UI/UX |
 | **UI/UX Design** | Crafted user-centered designs with clean visual hierarchy and responsive layouts |
-| **QA Engineering** | Designed and executed structured test cases for web applications |
+| **QA Testering** | Designed and executed structured test cases for web applications |
 | **Logistics Tech** | Built a serviceability engine for real-world delivery use cases |
 | **Problem Solving** | Multiple projects shipped from idea → deployment on Vercel |
 
